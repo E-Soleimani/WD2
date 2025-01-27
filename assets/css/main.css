@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@media only screen and (min-width:750px) {
+    .parent {
+        width: 100%;
+        height: 100vh;
+        background-color: #3b3b3b;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas:
+            'nav nav nav'
+            'offer offer aside'
+            'banner banner banner'
+            'product1 product2 product3'
+            'footer footer footer'
+        ;
+    }
+
+
+    .parent nav {
+        grid-area: nav;
+        height: 20vh;
+        background-color: darkslateblue;
+    }
+
+    .parent .offer {
+        grid-area: offer;
+        height: 15vh;
+        background-color: aqua;
+    }
+
+    .parent aside {
+        grid-area: aside;
+        height: 15vh;
+        background-color: yellow;
+    }
+
+    .parent .banner {
+        grid-area: banner;
+        height: 20vh;
+        background-color: teal;
+    }
+
+    .parent .product1 {
+        grid-area: product1;
+        height: 25vh;
+        background-color: navy;
+    }
+
+    .parent .product2 {
+        grid-area: product2;
+        height: 25vh;
+        background-color: olive;
+    }
+
+    .parent .product3 {
+        grid-area: product3;
+        height: 25vh;
+        background-color: orchid;
+    }
+
+    .parent footer {
+        grid-area: footer;
+        height: 20vh;
+        background-color: peru;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .parent {
+        width: 100%;
+        height: 100vh;
+        background-color: #3b3b3b;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas:
+            'nav'
+            'offer'
+            'aside'
+            'banner'
+            'product1'
+            'product2'
+            'product3'
+            'footer'
+        ;
+    }
+
+
+    .parent nav {
+        grid-area: nav;
+        height: 20vh;
+        background-color: darkslateblue;
+    }
+
+    .parent .offer {
+        grid-area: offer;
+        height: 15vh;
+        background-color: aqua;
+    }
+
+    .parent aside {
+        grid-area: aside;
+        height: 15vh;
+        background-color: yellow;
+    }
+
+    .parent .banner {
+        grid-area: banner;
+        height: 20vh;
+        background-color: teal;
+    }
+
+    .parent .product1 {
+        grid-area: product1;
+        height: 25vh;
+        background-color: navy;
+    }
+
+    .parent .product2 {
+        grid-area: product2;
+        height: 25vh;
+        background-color: olive;
+    }
+
+    .parent .product3 {
+        grid-area: product3;
+        height: 25vh;
+        background-color: orchid;
+    }
+
+    .parent footer {
+        grid-area: footer;
+        height: 20vh;
+        background-color: peru;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 500px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
